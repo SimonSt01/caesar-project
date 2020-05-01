@@ -1,0 +1,34 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+}
+.container{
+    margin: 0 auto;
+    max-width:1000px;
+    min-height:640px;
+    text-align: center;
+}
+h1{
+    font-size:6rem;
+    padding: 40px 0px 20px 0px;
+}
+h2{
+    font-size:2.5rem;
+    padding: 12px 0px ;
+}
+input{
+    min-width:600px;
+    height:50px;
+}
+button{
+    padding:5px;
+    min-width:120px;
+    height:50px;
+}
+.cipher-result{
+    margin-top:15px;
+    font-size:1.3rem;
+    color:rgb(31, 31, 148);
+}
