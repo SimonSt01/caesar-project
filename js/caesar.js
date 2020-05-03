@@ -22,13 +22,14 @@ const validator = (input) => {
     givenStrArr.map((el) => {
       if (el.match(/[0-9]/)) {
         cipherResult.innerHTML += el;
-      } else if (letters.includes(el) || letters.includes(el.toUpperCase())) {
-        if (el !== el.toUpperCase()) {
-          cipherResult.innerHTML += letters[(letters.indexOf(el.toUpperCase()) + 13) % letters.length].toLowerCase();
-        } else {
-          cipherResult.innerHTML += letters[(letters.indexOf(el) + 13) % letters.length];
-        }
+      } else if (letters.includes(el)) {
+        cipherResult.innerHTML += letters[(letters.indexOf(el) + 13) % letters.length];
       }
+      else if(el !== el.toUpperCase()){
+        cipherResult.innerHTML += letters[(letters.indexOf(el.toUpperCase()) + 13) % letters.length].toLowerCase();
+      }
+        
+      
     });
   
     input.value = "";
